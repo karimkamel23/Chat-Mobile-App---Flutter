@@ -49,16 +49,17 @@ In this project I created a chat app which lets you create an account and chat w
 - user_tile: Provides the implementation for the user tiles that are used to display the user names (chats) of other users in the home page.
 
 Firestore Structure:
+
 Collection : Users
-- for each user
+~for each user
 Fields: uid, email, username, token(if logged in on a device)
 
 Collection : chats
-- for every 2 users with an ongoing chat
+~for every 2 users with an ongoing chat
 Contains: messages collection
 
 Collection : messages:
-- for each message
+~for each message
 Fields: message, receiverID, senderEmail, senderID, timestamp
 
 ## Contact
